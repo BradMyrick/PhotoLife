@@ -10,7 +10,8 @@ from . import views
 #from django.urls import path
 
 urlpatterns = [
-    path('',views.home)
+    path('', views.home, name='home'),
+    path('explore/', views.explore, name='explore'),
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
 ]

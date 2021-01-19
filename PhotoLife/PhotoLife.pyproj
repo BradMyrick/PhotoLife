@@ -6051,6 +6051,7 @@
     <Content Include="PhotoLife\static\js\slider.js" />
     <Content Include="PhotoLife\templates\base.html" />
     <Content Include="PhotoLife\templates\index.html" />
+    <Content Include="PhotoLife\templates\portfolio.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
