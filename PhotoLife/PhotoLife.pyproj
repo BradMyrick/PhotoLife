@@ -4,6 +4,7 @@
     <Name>PhotoLife</Name>
     <RootNamespace>PhotoLife</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -6051,7 +6052,9 @@
     <Content Include="PhotoLife\static\js\slider.js" />
     <Content Include="PhotoLife\templates\base.html" />
     <Content Include="PhotoLife\templates\index.html" />
+    <Content Include="PhotoLife\templates\notifications.html" />
     <Content Include="PhotoLife\templates\portfolio.html" />
+    <Content Include="PhotoLife\templates\signup.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

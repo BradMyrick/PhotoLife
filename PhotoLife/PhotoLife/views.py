@@ -2,6 +2,30 @@ from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
 
+def home(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        '../templates/index.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
+def notifications(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        '../templates/notifications.html',
+        {
+            'title':'Notifications Page',
+            'year':datetime.now().year,
+        }
+    )
+
 def explore(request):
     """Renders the explore page."""
     assert isinstance(request, HttpRequest)
@@ -14,15 +38,17 @@ def explore(request):
             }
         )
 
-def home(request):
-    """Renders the home page."""
+def signup(request):
+    """Renders the explore page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        '../templates/index.html',
+        '../templates/signup.html',
         {
-            'title':'Home Page',
+            'title': 'Signup Page',
             'year':datetime.now().year,
-        }
-    )
+            }
+        )
+
+
 
