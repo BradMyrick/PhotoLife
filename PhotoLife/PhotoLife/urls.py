@@ -13,6 +13,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('notifications/', views.notifications, name='notifications'),
     path('explore/', views.explore, name='explore'),
+    path('profile/', views.profile, name='profile'),
     path('signup/', views.signup, name='signup'),
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)

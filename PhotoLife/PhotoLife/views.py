@@ -14,8 +14,21 @@ def home(request):
         }
     )
 
+
+def profile(request):
+    """Renders the profile page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        '../templates/profile.html',
+        {
+            'title':'Profile Page',
+            'year':datetime.now().year,
+        }
+    )
+
 def notifications(request):
-    """Renders the home page."""
+    """Renders the notifications page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,

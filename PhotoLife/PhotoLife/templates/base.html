@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"  has-background-primary-light />
     <title>Photos.Life</title>
-    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href={% static 'css/bulma.min.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 </head>
@@ -54,7 +54,7 @@
                     {% endif %}
                 </a>
 
-                <a href="" class="navbar-item">
+                <a href={% url 'profile' %} class="navbar-item">
                     <i class="material-icons">face</i>
                     Profile - <strong>{{ request.user }}</strong>
                 </a>
@@ -117,6 +117,6 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="../js/init.js"></script>
-<script src="../js/slider.js"></script>
+<script src="../static/js/init.js"></script>
+<script src="../static/js/slider.js"></script>
 </html>
