@@ -6107,6 +6107,9 @@
     <Content Include="PhotoLife\templates\notifications.html" />
     <Content Include="PhotoLife\templates\portfolio.html" />
     <Content Include="PhotoLife\templates\profile.html" />
+    <Content Include="PhotoLife\templates\registration\activate.html" />
+    <Content Include="PhotoLife\templates\registration\activation_complete.html" />
+    <Content Include="PhotoLife\templates\registration\activation_email.txt" />
     <Content Include="PhotoLife\templates\signup.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
@@ -8748,6 +8751,7 @@
     <Folder Include="PhotoLife\static\js\BulmaJS-0.12.0\src\plugins\" />
     <Folder Include="PhotoLife\static\js\BulmaJS-0.12.0\tests\" />
     <Folder Include="PhotoLife\templates\" />
+    <Folder Include="PhotoLife\templates\registration\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

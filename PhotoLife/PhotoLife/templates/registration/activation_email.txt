@@ -1,0 +1,9 @@
+Greetings, 
+
+You just signed up for an account at Photos.Life.
+Please click the link below to activate it:
+
+http://{ photos.life }}{% url 'registration_activate' activation_key %}
+
+This link is valid for 2 days. If you did not sign up for this account,
+please ignore this email. 

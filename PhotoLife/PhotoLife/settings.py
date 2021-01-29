@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'Blog',
+    'registration',
+]
 ]
 
 # Middleware framework
@@ -101,13 +104,28 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
+# Internationalization TODO find an automatic way to set the time and language for each user.
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+#login validation timeframe before timeout and dropped from system.
+ACCOUNT_ACTIVATION_DAYS= 2
+REGISTRATION_AUTO_LOGIN= True
+LOGIN_REDIRECT_URL= '/profile'
+
+#email settings TODO i need to set up a real email server so this will actually work
+EMAIL_BACKEND= "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST= "smtp.gmail.com"
+EMAIL_HOST_USER= "abc@gmail.com"
+EMAIL_HOST_PASSWORD= "password"
+EMAIL_PORT= 587
+EMAIL_USE_TLS= True
+DEFAULT_FROM_EMAIL= "abc@gmail.com"
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
